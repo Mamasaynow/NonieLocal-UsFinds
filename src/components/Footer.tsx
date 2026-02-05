@@ -16,9 +16,9 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-primary-foreground/70 max-w-md leading-relaxed mb-6">
-              Your calm guide to scent-free, low-tox home products. 
-              We help you make healthier choices for your home and family—without 
-              the overwhelm.
+              Your calm guide to low-tox home interiors. 
+              We help you choose furniture, finishes, and furnishings that support 
+              healthier indoor air—without the overwhelm.
             </p>
             <p className="text-sm text-primary-foreground/50">
               © {new Date().getFullYear()} Airaleaf. Made with care for sensitive souls.
@@ -31,7 +31,7 @@ const Footer = () => {
               Stay Connected
             </h3>
             <p className="text-primary-foreground/70 mb-6 leading-relaxed">
-              Want updates on new product reviews and tips for healthier living? 
+              Want updates on new product reviews and tips for healthier home design? 
               We keep it minimal—no spam, ever.
             </p>
             <a
