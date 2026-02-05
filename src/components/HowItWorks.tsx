@@ -5,21 +5,21 @@ const steps = [
   {
     icon: Search,
     title: "Choose a Category",
-    description: "Select from cleaning, laundry, personal care, and more. We've done the research so you don't have to.",
+    description: "Select from furniture, paints, rugs, window treatments, and more. We've done the research so you don't have to.",
     color: "bg-leaf-light",
     iconColor: "text-leaf",
   },
   {
     icon: Filter,
     title: "See Curated Options",
-    description: "View a short list of vetted products. Each one is scent-free, low-VOC, and selected with your health in mind.",
+    description: "View a short list of vetted home products. Each one is low-emission, certified, and selected with your health in mind.",
     color: "bg-sky",
     iconColor: "text-sky-foreground",
   },
   {
     icon: ThumbsUp,
     title: "Make a Confident Choice",
-    description: "Read simple explanations of why each product made the list. No ads, no sponsored picks—just honest guidance.",
+    description: "Read simple explanations of materials and certifications. No ads, no sponsored picks—just honest guidance.",
     color: "bg-warm/20",
     iconColor: "text-warm",
   },
@@ -38,7 +38,7 @@ const HowItWorks = () => {
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
             No account needed. No complicated filters. Just straightforward guidance 
-            to help you find products that are safer for you and your home.
+            to help you find home furnishings that are safer for you and your space.
           </p>
         </div>
 

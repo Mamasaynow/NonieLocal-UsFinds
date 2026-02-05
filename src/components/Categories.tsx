@@ -1,52 +1,52 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Sparkles, Shirt, Bath, Utensils, Home, Baby, ArrowRight } from "lucide-react";
+import { Sofa, Palette, Frame, Blinds, Layers, Archive, ArrowRight } from "lucide-react";
 
 const categories = [
   {
-    icon: Sparkles,
-    title: "Cleaning Products",
-    description: "All-purpose cleaners, surface sprays, and more—all fragrance-free and safe for sensitive households.",
-    count: "12 products",
+    icon: Sofa,
+    title: "Furniture",
+    description: "Sofas, chairs, tables, and beds made with low-emission materials and certified safe finishes.",
+    count: "14 products",
     color: "bg-leaf-light",
     iconColor: "text-leaf",
   },
   {
-    icon: Shirt,
-    title: "Laundry Care",
-    description: "Detergents, fabric softeners, and stain removers without harsh fragrances or irritating chemicals.",
-    count: "8 products",
+    icon: Frame,
+    title: "Home Goods & Decor",
+    description: "Decorative accents, frames, and accessories crafted from non-toxic materials for healthier spaces.",
+    count: "11 products",
     color: "bg-sky",
     iconColor: "text-sky-foreground",
   },
   {
-    icon: Bath,
-    title: "Personal Care",
-    description: "Soaps, lotions, and hygiene products that are gentle on skin and free from synthetic scents.",
-    count: "15 products",
+    icon: Palette,
+    title: "Paints & Finishes",
+    description: "Zero-VOC and low-tox paints, stains, and sealants that protect your walls and your air quality.",
+    count: "9 products",
     color: "bg-warm/20",
     iconColor: "text-warm",
   },
   {
-    icon: Utensils,
-    title: "Dish Care",
-    description: "Dish soaps and dishwasher detergents that clean effectively without leaving behind fragrance residue.",
-    count: "6 products",
+    icon: Blinds,
+    title: "Blinds & Window Treatments",
+    description: "Window shades, blinds, and curtains free from formaldehyde and harmful off-gassing chemicals.",
+    count: "8 products",
     color: "bg-primary/10",
     iconColor: "text-primary",
   },
   {
-    icon: Home,
-    title: "Air Quality",
-    description: "Air purifiers, filters, and natural solutions to help maintain clean, breathable indoor air.",
-    count: "10 products",
+    icon: Layers,
+    title: "Rugs & Soft Furnishings",
+    description: "Carpets, rugs, throws, and cushions made with natural fibers and certified low-emission materials.",
+    count: "12 products",
     color: "bg-muted",
     iconColor: "text-muted-foreground",
   },
   {
-    icon: Baby,
-    title: "Baby & Kids",
-    description: "Extra-gentle products for little ones, carefully selected for safety and minimal chemical exposure.",
-    count: "9 products",
+    icon: Archive,
+    title: "Storage & Organization",
+    description: "Shelving, baskets, and storage solutions built from safe, non-toxic materials for any room.",
+    count: "7 products",
     color: "bg-leaf-light",
     iconColor: "text-leaf",
   },
@@ -58,14 +58,14 @@ const Categories = () => {
       <div className="container">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="inline-block px-4 py-1.5 rounded-full bg-leaf-light text-leaf font-semibold text-sm mb-4">
-            Curated for You
+            Curated for Your Home
           </span>
           <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Product Categories
+            Home Interior Categories
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            We focus on fewer, better options. Each category contains only products 
-            that meet our strict scent-free, low-tox criteria.
+            We focus on fewer, better options. Each category contains only home furnishings 
+            and materials that meet our strict low-tox, scent-free criteria.
           </p>
         </div>
 

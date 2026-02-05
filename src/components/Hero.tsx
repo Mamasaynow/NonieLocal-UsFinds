@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Leaf, Wind, Heart } from "lucide-react";
+import { Leaf, Wind, Home } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -16,16 +16,16 @@ const Hero = () => {
           {/* Trust badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-leaf-light text-leaf font-medium text-sm mb-8 animate-fade-in">
             <Leaf className="w-4 h-4" aria-hidden="true" />
-            <span>Your calm guide to cleaner indoor air</span>
+            <span>Your calm guide to healthier home interiors</span>
           </div>
 
           <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-foreground leading-[1.1] mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            Breathe easier with{" "}
-            <span className="text-primary">better choices</span>
+            Furnish your home with{" "}
+            <span className="text-primary">cleaner choices</span>
           </h1>
 
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            Find scent-free, low-tox home products that support healthier living. 
+            Find low-tox furniture, decor, and finishes that support healthier indoor air. 
             No overwhelm, no sales pressure—just clear, helpful guidance for people 
             with allergies, asthma, or chemical sensitivities.
           </p>
@@ -49,19 +49,19 @@ const Hero = () => {
               <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-leaf-light">
                 <Leaf className="w-5 h-5 text-leaf" aria-hidden="true" />
               </div>
-              <span className="text-foreground font-medium">Scent-Free First</span>
+              <span className="text-foreground font-medium">Low-Emission</span>
             </div>
             <div className="flex items-center gap-3 justify-center sm:justify-start">
               <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-sky">
                 <Wind className="w-5 h-5 text-sky-foreground" aria-hidden="true" />
               </div>
-              <span className="text-foreground font-medium">Low-VOC Focused</span>
+              <span className="text-foreground font-medium">Zero-VOC Options</span>
             </div>
             <div className="flex items-center gap-3 justify-center sm:justify-start">
               <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-warm/20">
-                <Heart className="w-5 h-5 text-warm" aria-hidden="true" />
+                <Home className="w-5 h-5 text-warm" aria-hidden="true" />
               </div>
-              <span className="text-foreground font-medium">Health-Conscious</span>
+              <span className="text-foreground font-medium">Home-Focused</span>
             </div>
           </div>
         </div>

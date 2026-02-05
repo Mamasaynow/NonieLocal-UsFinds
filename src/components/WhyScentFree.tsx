@@ -1,26 +1,26 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { AlertCircle, Brain, Wind, Baby } from "lucide-react";
+import { AlertCircle, Brain, Wind, Sofa } from "lucide-react";
 
 const concerns = [
   {
     icon: Wind,
     title: "Respiratory Health",
-    description: "Fragrances can trigger asthma attacks, breathing difficulties, and aggravate chronic respiratory conditions.",
+    description: "Off-gassing from furniture and finishes can trigger asthma attacks and aggravate chronic respiratory conditions.",
   },
   {
     icon: Brain,
     title: "Migraines & Headaches",
-    description: "Synthetic scents are a common migraine trigger. Going fragrance-free can significantly reduce episodes.",
+    description: "VOCs from new furniture, paints, and textiles are common migraine triggers. Low-emission choices can reduce episodes.",
   },
   {
     icon: AlertCircle,
     title: "Chemical Sensitivities",
-    description: "Many people experience reactions to VOCs and fragrance chemicals, from skin irritation to fatigue.",
+    description: "Many people experience reactions to formaldehyde, flame retardants, and other chemicals in home furnishings.",
   },
   {
-    icon: Baby,
-    title: "Protecting Children",
-    description: "Children's developing bodies are more vulnerable to chemical exposures found in everyday products.",
+    icon: Sofa,
+    title: "Long-Term Exposure",
+    description: "Furniture and finishes release chemicals for years. Choosing certified low-tox materials protects you over time.",
   },
 ];
 
@@ -35,17 +35,17 @@ const WhyScentFree = () => {
               Understanding the Impact
             </span>
             <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Why Scent-Free Matters
+              Why Materials Matter
             </h2>
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
               <p>
-                Most household products contain synthetic fragrances made from 
-                hundreds of undisclosed chemicals. These can release volatile 
-                organic compounds (VOCs) that affect indoor air quality.
+                Most furniture, paints, and home textiles contain chemicals that 
+                release volatile organic compounds (VOCs) into your indoor air. 
+                This "off-gassing" can continue for months or even years.
               </p>
               <p>
                 For people with sensitivities, allergies, or respiratory conditions, 
-                these everyday products can cause real health problems. The good 
+                these everyday home items can cause real health problems. The good 
                 news? Safer alternatives exist—and we're here to help you find them.
               </p>
             </div>
@@ -55,9 +55,9 @@ const WhyScentFree = () => {
                 "Did you know?"
               </p>
               <p className="text-muted-foreground">
-                The average home contains 62 toxic chemicals, many from common 
-                cleaning and personal care products. Choosing scent-free, low-tox 
-                options is one of the easiest ways to reduce your exposure.
+                Indoor air can be 2-5 times more polluted than outdoor air, largely due to 
+                off-gassing from furniture, paints, and flooring. Choosing certified low-emission 
+                products is one of the most effective ways to improve your indoor air quality.
               </p>
             </div>
           </div>
