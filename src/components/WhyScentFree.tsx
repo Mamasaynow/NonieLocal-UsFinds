@@ -1,0 +1,89 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { AlertCircle, Brain, Wind, Baby } from "lucide-react";
+
+const concerns = [
+  {
+    icon: Wind,
+    title: "Respiratory Health",
+    description: "Fragrances can trigger asthma attacks, breathing difficulties, and aggravate chronic respiratory conditions.",
+  },
+  {
+    icon: Brain,
+    title: "Migraines & Headaches",
+    description: "Synthetic scents are a common migraine trigger. Going fragrance-free can significantly reduce episodes.",
+  },
+  {
+    icon: AlertCircle,
+    title: "Chemical Sensitivities",
+    description: "Many people experience reactions to VOCs and fragrance chemicals, from skin irritation to fatigue.",
+  },
+  {
+    icon: Baby,
+    title: "Protecting Children",
+    description: "Children's developing bodies are more vulnerable to chemical exposures found in everyday products.",
+  },
+];
+
+const WhyScentFree = () => {
+  return (
+    <section id="why" className="py-20 md:py-28 bg-leaf-light/50">
+      <div className="container">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          {/* Left content */}
+          <div>
+            <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary font-semibold text-sm mb-4">
+              Understanding the Impact
+            </span>
+            <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6">
+              Why Scent-Free Matters
+            </h2>
+            <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
+              <p>
+                Most household products contain synthetic fragrances made from 
+                hundreds of undisclosed chemicals. These can release volatile 
+                organic compounds (VOCs) that affect indoor air quality.
+              </p>
+              <p>
+                For people with sensitivities, allergies, or respiratory conditions, 
+                these everyday products can cause real health problems. The good 
+                news? Safer alternatives exist—and we're here to help you find them.
+              </p>
+            </div>
+
+            <div className="mt-8 p-6 rounded-2xl bg-card shadow-soft border border-border">
+              <p className="text-foreground font-medium mb-2">
+                "Did you know?"
+              </p>
+              <p className="text-muted-foreground">
+                The average home contains 62 toxic chemicals, many from common 
+                cleaning and personal care products. Choosing scent-free, low-tox 
+                options is one of the easiest ways to reduce your exposure.
+              </p>
+            </div>
+          </div>
+
+          {/* Right grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {concerns.map((concern, index) => (
+              <Card key={index} variant="elevated" className="h-full">
+                <CardContent className="p-6">
+                  <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 mb-4">
+                    <concern.icon className="w-6 h-6 text-primary" aria-hidden="true" />
+                  </div>
+                  <h3 className="font-heading text-lg font-bold text-foreground mb-2">
+                    {concern.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    {concern.description}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default WhyScentFree;
