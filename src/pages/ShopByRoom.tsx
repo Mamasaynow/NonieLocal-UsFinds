@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChefHat, Bath, Bed, DoorOpen, Maximize2, Filter, Heart } from "lucide-react";
+import { ChefHat, Bath, Bed, DoorOpen, Maximize2, Filter, Heart, Monitor, TreePalm } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -18,6 +18,8 @@ const rooms = [
   { id: "bedroom", name: "Bedroom", icon: Bed },
   { id: "entryway", name: "Entryway", icon: DoorOpen },
   { id: "small-spaces", name: "Small Spaces", icon: Maximize2 },
+  { id: "office", name: "Office Space", icon: Monitor },
+  { id: "patio", name: "Patio", icon: TreePalm },
 ];
 
 const filters = {
@@ -46,6 +48,12 @@ const sampleItems = [
   { id: 8, name: "Solid Wood Coat Rack", brand: "West Elm", certifications: ["FSC"], room: "entryway" },
   { id: 9, name: "Natural Fiber Entry Mat", brand: "Ruggable", certifications: ["OEKO-TEX"], room: "entryway" },
   { id: 10, name: "Stackable Storage Bins", brand: "Open Spaces", certifications: [], room: "small-spaces" },
+  { id: 11, name: "Solid Wood Desk", brand: "Medley Home", certifications: ["FSC", "GREENGUARD"], room: "office" },
+  { id: 12, name: "Ergonomic Office Chair", brand: "Autonomous", certifications: ["GREENGUARD"], room: "office" },
+  { id: 13, name: "Bamboo Monitor Stand", brand: "Uplift", certifications: ["FSC"], room: "office" },
+  { id: 14, name: "Teak Outdoor Dining Table", brand: "West Elm", certifications: ["FSC"], room: "patio" },
+  { id: 15, name: "Recycled Plastic Adirondack Chair", brand: "Polywood", certifications: [], room: "patio" },
+  { id: 16, name: "Natural Fiber Outdoor Rug", brand: "Ruggable", certifications: ["OEKO-TEX"], room: "patio" },
 ];
 
 const ShopByRoom = () => {

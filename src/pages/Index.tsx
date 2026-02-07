@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ChefHat, Bath, Bed, DoorOpen, Maximize2, Star, Leaf, ArrowRight } from "lucide-react";
+import { ChefHat, Bath, Bed, DoorOpen, Maximize2, Star, Leaf, ArrowRight, Monitor, TreePalm } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import BottomNav from "@/components/BottomNav";
@@ -10,6 +10,8 @@ const rooms = [
   { id: "bedroom", name: "Bedroom", icon: Bed, path: "/shop-by-room?room=bedroom" },
   { id: "entryway", name: "Entryway", icon: DoorOpen, path: "/shop-by-room?room=entryway" },
   { id: "small-spaces", name: "Small Spaces", icon: Maximize2, path: "/shop-by-room?room=small-spaces" },
+  { id: "office", name: "Office Space", icon: Monitor, path: "/shop-by-room?room=office" },
+  { id: "patio", name: "Patio", icon: TreePalm, path: "/shop-by-room?room=patio" },
 ];
 
 const Index = () => {
