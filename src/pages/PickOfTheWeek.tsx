@@ -1,7 +1,8 @@
-import { Heart, ExternalLink, Leaf, Award } from "lucide-react";
+import { Heart, ExternalLink, Leaf, Award, Info } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Alert, AlertDescription } from "@/components/ui/alert";
 
 const PickOfTheWeek = () => {
   const featuredItem = {
@@ -11,6 +12,7 @@ const PickOfTheWeek = () => {
     whyBetter: "Made from FSC-certified solid oak with zero-VOC finishes. No particle board, no formaldehyde-based glues. A breathable choice for your dining space.",
     materials: ["FSC-Certified Solid Oak", "Zero-VOC Natural Oil Finish", "No Particle Board or MDF"],
     certifications: ["FSC Certified", "GREENGUARD Gold"],
+    hasCommissionLink: true, // Set to true when the Learn More link earns a commission
   };
 
   return (
@@ -79,6 +81,15 @@ const PickOfTheWeek = () => {
                 ))}
               </div>
             </div>
+
+            {featuredItem.hasCommissionLink && (
+              <Alert className="bg-muted/50 border-border">
+                <Info className="h-4 w-4 text-muted-foreground" />
+                <AlertDescription className="text-sm text-muted-foreground">
+                  Airaleaf may receive a commission at no extra cost to you.
+                </AlertDescription>
+              </Alert>
+            )}
 
             <div className="flex gap-3 pt-4">
               <Button variant="outline" className="flex-1 gap-2">
