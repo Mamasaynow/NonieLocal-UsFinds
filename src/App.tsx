@@ -10,6 +10,7 @@ import Certifications from "./pages/Certifications";
 import LocalShops from "./pages/LocalShops";
 import Favorites from "./pages/Favorites";
 import Settings from "./pages/Settings";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import NotFound from "./pages/NotFound";
 import BottomNav from "./components/BottomNav";
 
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/local-shops" element={<><LocalShops /><BottomNav /></>} />
           <Route path="/favorites" element={<><Favorites /><BottomNav /></>} />
           <Route path="/settings" element={<><Settings /><BottomNav /></>} />
+          <Route path="/privacy" element={<><PrivacyPolicy /><BottomNav /></>} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
