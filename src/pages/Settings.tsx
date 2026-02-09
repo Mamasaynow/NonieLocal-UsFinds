@@ -1,4 +1,5 @@
-import { Leaf, Accessibility, Info, Shield } from "lucide-react";
+import { Leaf, Accessibility, Info, Shield, FileText } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
@@ -120,6 +121,24 @@ const Settings = () => {
                   High contrast and large text options
                 </li>
               </ul>
+            </CardContent>
+          </Card>
+        </section>
+
+        {/* Legal */}
+        <section className="mt-8">
+          <h2 className="font-heading text-lg font-bold text-foreground mb-4 flex items-center gap-2">
+            <FileText className="w-5 h-5 text-muted-foreground" aria-hidden="true" />
+            Legal
+          </h2>
+          <Card variant="default">
+            <CardContent className="p-5">
+              <Link 
+                to="/privacy-policy" 
+                className="text-primary hover:underline flex items-center gap-2"
+              >
+                Privacy Policy
+              </Link>
             </CardContent>
           </Card>
         </section>
