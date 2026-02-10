@@ -27,7 +27,7 @@ const BottomNav = () => {
               cn(
                 "flex flex-col items-center justify-center gap-1 px-2 py-2 rounded-xl transition-colors min-w-[52px]",
                 isActive
-                  ? "text-primary bg-leaf-light"
+                  ? "text-primary bg-primary-light"
                   : "text-muted-foreground hover:text-foreground hover:bg-muted"
               )
             }

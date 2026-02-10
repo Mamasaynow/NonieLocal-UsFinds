@@ -23,6 +23,7 @@
     /* Soft Teal - primary brand color */
     --primary: 168 38% 59%;
     --primary-foreground: 0 0% 100%;
+    --primary-light: 168 38% 92%;
 
     /* Warm Cream secondary */
     --secondary: 43 47% 94%;
@@ -89,6 +90,7 @@
 
     --primary: 168 38% 55%;
     --primary-foreground: 0 0% 10%;
+    --primary-light: 168 30% 20%;
 
     --secondary: 0 0% 18%;
     --secondary-foreground: 43 30% 90%;

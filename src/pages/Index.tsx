@@ -21,8 +21,8 @@ const Index = () => {
       <header className="bg-card/80 backdrop-blur-md border-b border-border/50 sticky top-0 z-40">
         <div className="container flex items-center justify-center h-16 px-4">
           <a href="/" className="flex items-center gap-2" aria-label="Airaleaf Home">
-            <div className="flex items-center justify-center w-9 h-9 rounded-xl bg-leaf-light">
-              <Leaf className="w-5 h-5 text-leaf" aria-hidden="true" />
+            <div className="flex items-center justify-center w-9 h-9 rounded-xl bg-primary-light">
+              <Leaf className="w-5 h-5 text-primary" aria-hidden="true" />
             </div>
             <span className="font-heading text-xl font-bold text-foreground">
               Airaleaf
@@ -101,8 +101,8 @@ const Index = () => {
                   className="h-full bg-card hover:bg-secondary/50"
                 >
                   <CardContent className="p-4 flex flex-col items-center justify-center text-center min-h-[100px]">
-                    <div className="w-10 h-10 bg-leaf-light rounded-xl flex items-center justify-center mb-2">
-                      <Icon className="w-5 h-5 text-leaf" aria-hidden="true" />
+                    <div className="w-10 h-10 bg-primary-light rounded-xl flex items-center justify-center mb-2">
+                      <Icon className="w-5 h-5 text-primary" aria-hidden="true" />
                     </div>
                     <span className="font-heading font-semibold text-foreground text-sm">
                       {name}
