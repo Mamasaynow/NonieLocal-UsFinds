@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChefHat, Bath, Bed, DoorOpen, Maximize2, Filter, Heart, Monitor, TreePalm } from "lucide-react";
+import { ChefHat, Bath, Bed, DoorOpen, Maximize2, Filter, Heart, Monitor, TreePalm, Leaf } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -57,6 +57,26 @@ const sampleItems = [
   { id: 17, name: "Recycled Plastic Adirondack Chair", brand: "Polywood", certifications: [], room: "patio" },
   { id: 18, name: "Natural Fiber Outdoor Rug", brand: "Ruggable", certifications: ["OEKO-TEX"], room: "patio" },
 ];
+
+const roomColors: Record<string, { bg: string; text: string }> = {
+  kitchen: { bg: "bg-primary-light", text: "text-primary" },
+  bathroom: { bg: "bg-sky", text: "text-sky-foreground" },
+  bedroom: { bg: "bg-secondary", text: "text-primary" },
+  entryway: { bg: "bg-warm/20", text: "text-warm-foreground" },
+  "small-spaces": { bg: "bg-muted", text: "text-muted-foreground" },
+  office: { bg: "bg-primary-light", text: "text-primary" },
+  patio: { bg: "bg-sky", text: "text-sky-foreground" },
+};
+
+const roomIcons: Record<string, typeof ChefHat> = {
+  kitchen: ChefHat,
+  bathroom: Bath,
+  bedroom: Bed,
+  entryway: DoorOpen,
+  "small-spaces": Maximize2,
+  office: Monitor,
+  patio: TreePalm,
+};
 
 const ShopByRoom = () => {
   const [selectedRoom, setSelectedRoom] = useState("kitchen");
@@ -158,12 +178,11 @@ const ShopByRoom = () => {
           {filteredItems.map((item) => (
             <Card key={item.id} variant="default" className="overflow-hidden">
               <CardContent className="p-4 flex gap-4">
-                <div className="w-20 h-20 bg-muted rounded-xl shrink-0 flex items-center justify-center">
-                  <img 
-                    src="/placeholder.svg" 
-                    alt={item.name}
-                    className="w-full h-full object-cover rounded-xl"
-                  />
+                <div className={`w-20 h-20 ${roomColors[item.room]?.bg || "bg-muted"} rounded-xl shrink-0 flex items-center justify-center`}>
+                  {(() => {
+                    const RoomIcon = roomIcons[item.room] || Leaf;
+                    return <RoomIcon className={`w-8 h-8 ${roomColors[item.room]?.text || "text-muted-foreground"}`} aria-hidden="true" />;
+                  })()}
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-xs text-muted-foreground mb-0.5">{item.brand}</p>
