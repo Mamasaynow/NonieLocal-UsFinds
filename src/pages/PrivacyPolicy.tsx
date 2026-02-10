@@ -176,6 +176,40 @@ const PrivacyPolicy = () => {
           </Card>
         </section>
 
+        {/* Complaints */}
+        <section className="mb-6">
+          <h2 className="font-heading text-lg font-bold text-foreground mb-4 flex items-center gap-2">
+            <FileText className="w-5 h-5 text-destructive" aria-hidden="true" />
+            Privacy Complaints
+          </h2>
+          <Card variant="default">
+            <CardContent className="p-5 space-y-3">
+              <p className="text-foreground leading-relaxed">
+                If you believe your privacy has not been respected while using Airaleaf, 
+                you have the right to raise a complaint.
+              </p>
+              <ul className="space-y-2 text-muted-foreground text-sm">
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-leaf mt-2 shrink-0" />
+                  Contact us with a description of your concern
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-leaf mt-2 shrink-0" />
+                  We will acknowledge your complaint within 7 days
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-leaf mt-2 shrink-0" />
+                  We will investigate and respond within 30 days
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-leaf mt-2 shrink-0" />
+                  If unsatisfied, you may escalate to your local data protection authority
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+        </section>
+
         {/* Questions */}
         <section>
           <h2 className="font-heading text-lg font-bold text-foreground mb-4 flex items-center gap-2">
