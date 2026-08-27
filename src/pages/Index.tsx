@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ChefHat, Bath, Bed, DoorOpen, Maximize2, Star, Leaf, ArrowRight, Monitor, TreePalm } from "lucide-react";
+import { ChefHat, Bath, Bed, DoorOpen, Maximize2, Star, Leaf, ArrowRight, Monitor, TreePalm, Wand2 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import BottomNav from "@/components/BottomNav";
@@ -60,6 +60,32 @@ const Index = () => {
                     </p>
                     <span className="text-primary text-sm font-medium inline-flex items-center gap-1">
                       View details <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                    </span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </Link>
+        </section>
+
+        {/* Room Visualizer */}
+        <section className="mb-8">
+          <Link to="/room-visualizer" className="block">
+            <Card variant="feature" className="overflow-hidden hover:shadow-hover transition-shadow">
+              <CardContent className="p-5">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-primary-light rounded-xl flex items-center justify-center shrink-0">
+                    <Wand2 className="w-6 h-6 text-primary" aria-hidden="true" />
+                  </div>
+                  <div className="flex-1">
+                    <h2 className="font-heading text-lg font-bold text-foreground mb-1">
+                      Room Visualizer
+                    </h2>
+                    <p className="text-sm text-muted-foreground mb-2">
+                      Upload a photo of your space and find healthier products that fit it.
+                    </p>
+                    <span className="text-primary text-sm font-medium inline-flex items-center gap-1">
+                      Try it <ArrowRight className="w-4 h-4" aria-hidden="true" />
                     </span>
                   </div>
                 </div>
